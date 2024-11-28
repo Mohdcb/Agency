@@ -1,0 +1,14 @@
+/* Add this to your Tailwind CSS file */
+.bg-curve::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100"><path d="M0 0h500v50c-150 50-350-50-500 0V0z" fill="white"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  z-index: -1;
+}

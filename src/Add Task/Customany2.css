@@ -1,0 +1,101 @@
+:where(.css-dev-only-do-not-override-1x0dypw).ant-radio-wrapper .ant-radio-inner::after {
+     width: 20px;
+    height: 20px;
+    margin-block-start: -10px;
+    margin-inline-start: -10px;
+    background-color: #ff0000;
+    border-block-start: 0;
+    border-inline-start: 0;
+    border-radius: 16px;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    content: "";
+}
+
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+    border-color: #00000000;
+    background-color: #F2F2F2;
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-radio-wrapper .ant-radio-inner {
+    box-sizing: border-box;
+    position: relative;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #F2F2F2;
+    border-color: #d9d9d9;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20%;
+    padding: 10px;
+    transition: all 0.2s;
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-radio-wrapper span.ant-radio+* {
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    font-size: 11px;
+    color: #888888;}
+
+
+
+    :where(.css-dev-only-do-not-override-1x0dypw).ant-checkbox .ant-checkbox-inner {
+        
+        background-color: #13AE85;
+        border: 1px solid #d9d9d900;
+        
+    }
+
+
+    :where(.css-dev-only-do-not-override-1x0dypw).ant-input-outlined {
+        background: #f2f2f2;
+        border-width: 1px;
+        padding:7px;
+        border-style: solid;
+        border-color: #00000000;
+    }
+
+    :where(.css-dev-only-do-not-override-1x0dypw).ant-input:placeholder-shown {
+        text-overflow: ellipsis;
+        font-size: 11px;}
+
+        :where(.css-dev-only-do-not-override-1x0dypw).ant-picker-outlined {
+            background: #f2f2f2;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #00000000;
+            padding: 7px;
+            /* font-size: 10px; */
+        }
+        :where(.css-dev-only-do-not-override-1x0dypw).ant-picker .ant-picker-input >input:placeholder-shown {
+            text-overflow: ellipsis;
+            font-size:11px;
+        }
+
+        :where(.css-dev-only-do-not-override-1x0dypw).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+            border: none;
+            background: #f2f2f2;}
+
+
+
+            :where(.css-dev-only-do-not-override-1x0dypw).ant-select-single.ant-select-show-arrow .ant-select-selection-item, :where(.css-dev-only-do-not-override-1x0dypw).ant-select-single.ant-select-show-arrow .ant-select-selection-search, :where(.css-dev-only-do-not-override-1x0dypw).ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+                padding-inline-end: 23px;
+                font-size: 11px;
+            }
+
+
+            :where(.css-dev-only-do-not-override-1x0dypw).ant-radio-wrapper .ant-radio-inner {
+                
+                border-color: #d9d9d900;}
+
+
+                :where(.css-dev-only-do-not-override-1x0dypw).ant-btn {
+                    font-size: 12px !important;
+                    line-height: 1.5714285714285714;
+                    height: 32px;
+                    padding: 17px 15px !important;}

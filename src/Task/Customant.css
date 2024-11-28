@@ -1,0 +1,10 @@
+.ant-progress-layout-bottom {
+    flex-direction: column-reverse !important;
+    display: flex;
+    align-content: space-around;
+    align-items: flex-end !important;
+    gap: 10px;}
+
+    span.ant-progress-text.ant-progress-text-center.ant-progress-text-outer {
+        color: #888888 !important;
+    }
