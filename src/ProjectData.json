@@ -1,0 +1,225 @@
+
+[
+  {
+    "projectId": 1,
+    "projectTitle": "Perfviz Video Campaign",
+    "clientName": "Perfviz LLP",
+    "packageName": "Premium Video Package",
+    "deadline": "2024-12-31",
+    "status": "In Progress",
+    "works": [
+      {
+        "workId": 1,
+        "workTitle": "Video 1 Production",
+        "status": "In Progress",
+        "subtasks": [
+          {
+            "taskId": 1,
+            "taskTitle": "Script Writing",
+            "assignedPerson": "John Doe",
+            "deadline": "2024-12-05",
+            "status": "In Progress"
+          },
+          {
+            "taskId": 2,
+            "taskTitle": "Video Shooting",
+            "assignedPerson": "Hashim",
+            "deadline": "2024-12-01",
+            "status": "Pending"
+          },
+          {
+            "taskId": 3,
+            "taskTitle": "Post-Production Editing",
+            "assignedPerson": "Hashim",
+            "deadline": "2024-12-02",
+            "status": "Pending"
+          }
+        ]
+      },
+      {
+        "workId": 2,
+        "workTitle": "Video 2 Animation",
+        "status": "Pending",
+        "subtasks": [
+          {
+            "taskId": 4,
+            "taskTitle": "Storyboard Creation",
+            "assignedPerson": "Emily Davis",
+            "deadline": "2024-12-03",
+            "status": "Pending"
+          },
+          {
+            "taskId": 5,
+            "taskTitle": "Animation Design",
+            "assignedPerson": "Hashim",
+            "deadline": "2024-12-01",
+            "status": "Pending"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "projectId": 2,
+    "projectTitle": "E-commerce Branding Campaign",
+    "clientName": "ABC Retail",
+    "packageName": "Standard Branding Package",
+    "deadline": "2024-11-30",
+    "status": "Pending",
+    "works": [
+      {
+        "workId": 3,
+        "workTitle": "Logo Design",
+        "status": "Pending",
+        "subtasks": [
+          {
+            "taskId": 6,
+            "taskTitle": "Concept Sketching",
+            "assignedPerson": "John Doe",
+            "deadline": "2024-12-01",
+            "status": "Pending"
+          },
+          {
+            "taskId": 7,
+            "taskTitle": "Final Logo Rendering",
+            "assignedPerson": "Hashim",
+            "deadline": "2024-12-02",
+            "status": "Pending"
+          }
+        ]
+      },
+      {
+        "workId": 4,
+        "workTitle": "Brand Identity Guidelines",
+        "status": "Pending",
+        "subtasks": [
+          {
+            "taskId": 8,
+            "taskTitle": "Color Palette Design",
+            "assignedPerson": "David Clark",
+            "deadline": "2024-12-03",
+            "status": "Pending"
+          },
+          {
+            "taskId": 9,
+            "taskTitle": "Typography Rules",
+            "assignedPerson": "Hashim",
+            "deadline": "2024-11-30",
+            "status": "Pending"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "projectId": 3,
+    "projectTitle": "FastX Social Media Marketing",
+    "clientName": "FastX Logistics",
+    "packageName": "Enterprise Marketing Package",
+    "deadline": "2025-01-15",
+    "status": "In Progress",
+    "works": [
+      {
+        "workId": 5,
+        "workTitle": "Social Media Ads",
+        "status": "In Progress",
+        "subtasks": [
+          {
+            "taskId": 10,
+            "taskTitle": "Ad Copywriting",
+            "assignedPerson": "Lucas Grey",
+            "deadline": "2024-12-10",
+            "status": "In Progress"
+          },
+          {
+            "taskId": 11,
+            "taskTitle": "Creative Design",
+            "assignedPerson": "John Doe",
+            "deadline": "2024-12-01",
+            "status": "Pending"
+          }
+        ]
+      },
+      {
+        "workId": 6,
+        "workTitle": "Performance Analytics",
+        "status": "Pending",
+        "subtasks": [
+          {
+            "taskId": 12,
+            "taskTitle": "Report Creation",
+            "assignedPerson": "Hashim",
+            "deadline": "2024-11-30",
+            "status": "Pending"
+          },
+          {
+            "taskId": 13,
+            "taskTitle": "Strategy Revision",
+            "assignedPerson": "Sophia Blue",
+            "deadline": "2025-01-10",
+            "status": "Pending"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "projectId": 4,
+    "projectTitle": "Luxury Fragrance Product Launch",
+    "clientName": "Kuwait Fragrance House",
+    "packageName": "Product Video Package",
+    "deadline": "2024-12-15",
+    "status": "In Progress",
+    "works": [
+      {
+        "workId": 7,
+        "workTitle": "Product Video Creation",
+        "status": "In Progress",
+        "subtasks": [
+          {
+            "taskId": 14,
+            "taskTitle": "Conceptualization",
+            "assignedPerson": "Henry Brown",
+            "deadline": "2024-11-20",
+            "status": "Completed"
+          },
+          {
+            "taskId": 15,
+            "taskTitle": "Video Shooting",
+            "assignedPerson": "John Doe",
+            "deadline": "2024-12-02",
+            "status": "In Progress"
+          },
+          {
+            "taskId": 16,
+            "taskTitle": "Editing & Finalization",
+            "assignedPerson": "Evelyn White",
+            "deadline": "2024-12-10",
+            "status": "Pending"
+          }
+        ]
+      },
+      {
+        "workId": 8,
+        "workTitle": "Social Media Teaser Campaign",
+        "status": "Pending",
+        "subtasks": [
+          {
+            "taskId": 17,
+            "taskTitle": "Teaser Design",
+            "assignedPerson": "Benjamin Clark",
+            "deadline": "2024-12-08",
+            "status": "Pending"
+          },
+          {
+            "taskId": 18,
+            "taskTitle": "Publishing Schedule",
+            "assignedPerson": "Hashim",
+            "deadline": "2024-12-01",
+            "status": "Pending"
+          }
+        ]
+      }
+    ]
+  }
+]

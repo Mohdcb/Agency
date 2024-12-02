@@ -1,5 +1,5 @@
 .ant-progress-layout-bottom {
-    flex-direction: column-reverse !important;
+   
     display: flex;
     align-content: space-around;
     align-items: flex-end !important;

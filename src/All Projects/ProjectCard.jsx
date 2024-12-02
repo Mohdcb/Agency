@@ -5,17 +5,19 @@ import { Camera, Users } from 'lucide-react';
 import { Calendar } from 'iconoir-react';
 import './Customant.css'
 
-const TaskCard = ({ title, deadline, priority, employees, progress }) => {
+const ProjectCard = ({ title, deadline, priority, employees, progress }) => {
   return (
     <div className="bg-white rounded-3xl shadow-md p-4 pt-6">
       <div  className='flex items-center justify-between'>
       <div><h3 className="text-[16px] ">{title}</h3></div>
+     
       <div className='bg-gray-50 flex items-center justify-center gap-1  w-[30px] h-[30px] rounded-xl'>  <div className=' bg-gray-500  w-1 h-1 rounded-full '></div> <div className=' bg-gray-500  w-1 h-1 rounded-full '></div> </div>
 
       </div>
-      
-      <div className="flex items-center space-x-2 mt-4">
-        <Users size={18} />
+      <p className='font-light text-[12px]'>Package 1 (2* Video, 4* Posters, Marketing)</p>
+    
+        {/* <Users size={18} /> */}
+       <div className='flex justify-between gap-8 space-x-2 mt-4'>
         <div className="flex -space-x-2">
           {employees.slice(0, 4).map((employee, index) => (
             <img
@@ -32,8 +34,20 @@ const TaskCard = ({ title, deadline, priority, employees, progress }) => {
             </div>
           )}
         </div>
-      </div>
-      <div className="">
+
+
+<div className="flex items-center space-x-2 bg-[#748EFE] text-white rounded-lg px-2">
+          <Calendar width={16} />
+          <span className='text-[12px]'>{deadline}</span>
+        </div>
+
+
+
+        </div>
+
+
+      
+      <div className="pt-7">
       <Progress  percentPosition={{
         align: 'center',
         type: 'outer',
@@ -42,10 +56,7 @@ const TaskCard = ({ title, deadline, priority, employees, progress }) => {
       <div className=" pt-3 flex items-center space-x-2 gap-4 ">
           
         
-      <div className="flex items-center space-x-2">
-          <Calendar width={16} />
-          <span className='text-[12px]'>{deadline}</span>
-        </div>
+      
         <div className='flex items-center gap-2 justify-center '>
 
         <div
@@ -60,4 +71,4 @@ const TaskCard = ({ title, deadline, priority, employees, progress }) => {
   );
 };
 
-export default TaskCard;
+export default ProjectCard;

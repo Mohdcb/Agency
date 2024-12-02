@@ -1,7 +1,7 @@
 // tasks.js
 export const tasks = [
   {
-    title: 'Ads Video',
+    title: 'Grodience / Nov',
     deadline: '11/02/2025',
     priority: 'high',
     employees: [
@@ -12,10 +12,10 @@ export const tasks = [
       ,
       { name: 'Tom Wilson', image: "/images/Task Image 1.png"  }
     ],
-    progress: 35
+    progress: 78
   },
   {
-    title: 'Website',
+    title: 'Asmr / Nov',
     deadline: '06/03/2025',
     priority: 'medium',
     employees: [
@@ -23,6 +23,6 @@ export const tasks = [
       { name: 'Michael Brown', image: "/images/Task Image 4 (3).png"  },
       { name: 'Jessica Wilson', image: "/images/Task Image 1.png"  }
     ],
-    progress: 69
+    progress: 45
   },
 ];

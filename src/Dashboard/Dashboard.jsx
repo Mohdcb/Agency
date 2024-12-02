@@ -1,10 +1,12 @@
 import { Search, Settings2 } from 'lucide-react'
-import React,{ useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { Avatar, Popover, List, Modal, Input,Progress } from "antd";
 import { Teamdata } from "../Resource/Teamdata.jsx";
 import CalendarView from './CalenderView.jsx'; 
-import TaskCard from  '../Task/TaskCard.jsx';
-import { tasks } from '../Task/Tasks.jsx';
+import TaskCard from  '../All Projects/ProjectCard.jsx';
+import { tasks } from '../All Projects/Tasks.jsx';
+import projectData from '../ProjectData.json'
+import TaskFilters from '../alltasks/TaskFilters'
 
 
 
@@ -44,6 +46,69 @@ function Dashboard() {
     employee.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
   
+
+    // // Handle filter changes
+    // const handleFilterChange = (newFilters) => {
+    //   setFilters(prev => ({
+    //     ...prev,
+    //     ...newFilters,
+    //     // Ensure Hashim remains the assignee
+    //     assignee: 'Hashim'
+    //   }));
+    // };
+
+    // Handle date change for calendar
+  const handleDateChange = (date) => {
+    setFilters(prev => ({
+      ...prev,
+      date: date
+    }));
+  };
+  
+// State for managing task filtering and popup
+const [filters, setFilters] = useState({
+  assignee: 'Hashim',
+  status: null,
+  date: null,
+  taskTitle: null
+});
+
+    // Filter tasks for Hashim
+    const filteredTasks = useMemo(() => {
+      if (!projectData) return { tasks: [] };
+  
+      const tasks = projectData.flatMap((project) =>
+        project.works.flatMap((work) =>
+          work.subtasks
+            .filter((task) => {
+              // Always filter for Hashim
+              if (task.assignedPerson !== 'Hashim') return false;
+  
+              // Additional filters
+              if (filters.status && task.status !== filters.status) return false;
+              if (filters.date) {
+                const taskDate = new Date(task.deadline);
+                const selectedDate = new Date(filters.date);
+                if (
+                  taskDate.getFullYear() !== selectedDate.getFullYear() ||
+                  taskDate.getMonth() !== selectedDate.getMonth() ||
+                  taskDate.getDate() !== selectedDate.getDate()
+                )
+                  return false;
+              }
+              if (filters.taskTitle && task.taskTitle !== filters.taskTitle) return false;
+              return true;
+            })
+            .map((task) => ({
+              ...task,
+              workTitle: work.workTitle,
+              projectTitle: project.projectTitle,
+            }))
+        )
+      );
+  
+      return { tasks };
+    }, [projectData, filters]);
 
   return (
     <div className="lg:w-96 bg-[#F2F2F2] p-4 b-40">
@@ -149,7 +214,7 @@ function Dashboard() {
             </div>
 
 
-
+{/* 
             <h3 className='mb-3'>
                 Tasks
             </h3>
@@ -167,7 +232,35 @@ function Dashboard() {
           progress={task.progress}
         />
       ))}
-    </div>
+    </div> */}
+
+<div>
+        <h3 className='pt-5'> Leaves </h3>
+        <div className='pt-3'>
+          <CalendarView onDateChange={handleDateChange} />
+        </div>
+      </div>
+
+      {filteredTasks.tasks.length > 0 ? (
+        <div className='grid grid-cols-2 gap-3'>
+          {filteredTasks.tasks.map((task) => (
+            <TaskCard
+              key={task.taskId}
+              task={task}
+              projectTitle={task.projectTitle}
+              workTitle={task.workTitle}
+              onEditClick={() => {
+                // setSelectedTaskId(task.taskId);
+                // setIsPopupVisible(true);
+              }}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className='text-center text-gray-500 pt-5'>
+          No tasks found for Hashim
+        </div>
+      )}
             
 
     </div>

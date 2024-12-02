@@ -1,0 +1,65 @@
+{
+    "employees": [
+      {
+        "employeeId": "employee2",
+        "name": "Hashim Khan",
+        "role": "Developer",
+        "location": "Kochi",
+        "since": "January 2023",
+        "department": "Development",
+        "leaveDates": ["2024-11-20", "2024-12-01"],
+        "image": "images/emp1.png"
+      },
+      {
+        "employeeId": "employee3",
+        "name": "John Doe",
+        "role": "SEO Specialist",
+        "location": "Mumbai",
+        "since": "March 2022",
+        "department": "Marketing",
+        "leaveDates": ["2024-11-15", "2024-11-25"],
+        "image": "images/emp2.png"
+      },
+      {
+        "employeeId": "employee4",
+        "name": "Jane Smith",
+        "role": "Graphic Designer",
+        "location": "Delhi",
+        "since": "June 2021",
+        "department": "Design",
+        "leaveDates": ["2024-11-18", "2024-11-30"],
+        "image": "images/emp3.png"
+      },
+      {
+        "employeeId": "employee5",
+        "name": "Eve Williams",
+        "role": "Content Writer",
+        "location": "Chennai",
+        "since": "May 2020",
+        "department": "Content",
+        "leaveDates": ["2024-12-05", "2024-12-15"],
+        "image": "images/emp4.png"
+      },
+      {
+        "employeeId": "employee6",
+        "name": "Alex Brown",
+        "role": "Marketing Specialist",
+        "location": "Hyderabad",
+        "since": "August 2019",
+        "department": "Marketing",
+        "leaveDates": ["2024-11-28", "2024-12-10"],
+        "image": "images/emp5.png"
+      },
+      {
+        "employeeId": "employee7",
+        "name": "Hashim Ahmed",
+        "role": "UI/UX Designer",
+        "location": "Bangalore",
+        "since": "October 2020",
+        "department": "Design",
+        "leaveDates": ["2024-11-22", "2024-12-07"],
+        "image": "images/emp6.png"
+      }
+    ]
+  }
+  

@@ -1,0 +1,12 @@
+:where(.css-dev-only-do-not-override-1x0dypw).ant-input-outlined {
+    background: #ffffff;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #00000000;
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-btn-variant-outlined, :where(.css-dev-only-do-not-override-1x0dypw).ant-btn-variant-dashed {
+    border-color: #ffffff;
+    background: #ffffff;
+}

@@ -1,0 +1,10 @@
+:where(.css-dev-only-do-not-override-1x0dypw).ant-timeline .ant-timeline-item-content {
+    position: relative;
+    inset-block-start: -15px !important ; }
+
+    :where(.css-dev-only-do-not-override-1x0dypw).ant-picker .ant-picker-input >input {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        color: inherit;
+        font-size: 10px;}

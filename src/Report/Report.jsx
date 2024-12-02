@@ -2,7 +2,7 @@
 import { ChevronLeft, Search, Settings2 } from 'lucide-react'
 import React from 'react'
 import { Flex, Progress } from 'antd';
-import '../Task/Customant.css';
+import '../All Projects/Customant.css';
 import CapacityComp from './CapacityComp';
 
 
