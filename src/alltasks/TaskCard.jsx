@@ -15,20 +15,19 @@ const getStatusColor = (status) => {
   }
 };
 
-const TaskCard = ({ task, projectTitle, workTitle }) => {
+const TaskCard = ({ task, projectTitle, workTitle, employeeImage }) => {
   const statusColor = getStatusColor(task.status);
 
   return (
     <div className='bg-white p-3 w-full rounded-xl shadow-sm mt-3'>
       <div className='flex justify-between items-center pb-3'>
         <Avatar 
-          // You might want to replace this with an actual avatar or icon source
-          src="/images/Task Image 1.png" 
+          src={employeeImage}
         />
         <Edit strokeWidth={1} size={15}/>
       </div>
       <div> 
-        <h3 className='text-[10px]'>{projectTitle}</h3>
+        <h3 className='text-[11px] pb-2 leading-3'>{projectTitle}</h3>
         <p className='text-[8px] text-gray-600 mb-1'>{workTitle} / {task.taskTitle}</p>
       </div>
       <div className={`mt-3 flex items-center justify-center gap-1 rounded-md p-1 bg-[#F2F2F2] ${statusColor}`}>
@@ -40,3 +39,4 @@ const TaskCard = ({ task, projectTitle, workTitle }) => {
 };
 
 export default TaskCard;
+

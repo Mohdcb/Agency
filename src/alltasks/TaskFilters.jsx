@@ -34,15 +34,15 @@ const TaskFilters = ({ projectData, onFilterChange }) => {
   };
 
   return (
-    <div className="space-y-2 transition-all duration-300">
+    <div className="space-y-2 transition-all duration-300 ">
       <div 
-        className="flex items-center bg-white p-2 absolute  rounded-lg top-[45px] right- gap-2 text-gray-600 cursor-pointer"
+        className="flex items-center bg-white p-2 absolute shadow-sm rounded-lg top-[40px] right-[65px] gap-2 text-gray-600 cursor-pointer"
         onClick={toggleFiltersVisibility}
       >
         {isFiltersVisible ? (
-          <X size={20} strokeWidth={1} />
+          <X size={20} strokeWidth={2} />
         ) : (
-          <Filter size={16} strokeWidth={1} />
+          <Filter size={20} strokeWidth={2} />
         )}
         {/* <span className="font-medium text-sm">Filters</span> */}
       </div>

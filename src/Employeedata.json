@@ -1,65 +1,104 @@
 {
-    "employees": [
-      {
-        "employeeId": "employee2",
-        "name": "Hashim Khan",
-        "role": "Developer",
-        "location": "Kochi",
-        "since": "January 2023",
-        "department": "Development",
-        "leaveDates": ["2024-11-20", "2024-12-01"],
-        "image": "images/emp1.png"
-      },
-      {
-        "employeeId": "employee3",
-        "name": "John Doe",
-        "role": "SEO Specialist",
-        "location": "Mumbai",
-        "since": "March 2022",
-        "department": "Marketing",
-        "leaveDates": ["2024-11-15", "2024-11-25"],
-        "image": "images/emp2.png"
-      },
-      {
-        "employeeId": "employee4",
-        "name": "Jane Smith",
-        "role": "Graphic Designer",
-        "location": "Delhi",
-        "since": "June 2021",
-        "department": "Design",
-        "leaveDates": ["2024-11-18", "2024-11-30"],
-        "image": "images/emp3.png"
-      },
-      {
-        "employeeId": "employee5",
-        "name": "Eve Williams",
-        "role": "Content Writer",
-        "location": "Chennai",
-        "since": "May 2020",
-        "department": "Content",
-        "leaveDates": ["2024-12-05", "2024-12-15"],
-        "image": "images/emp4.png"
-      },
-      {
-        "employeeId": "employee6",
-        "name": "Alex Brown",
-        "role": "Marketing Specialist",
-        "location": "Hyderabad",
-        "since": "August 2019",
-        "department": "Marketing",
-        "leaveDates": ["2024-11-28", "2024-12-10"],
-        "image": "images/emp5.png"
-      },
-      {
-        "employeeId": "employee7",
-        "name": "Hashim Ahmed",
-        "role": "UI/UX Designer",
-        "location": "Bangalore",
-        "since": "October 2020",
-        "department": "Design",
-        "leaveDates": ["2024-11-22", "2024-12-07"],
-        "image": "images/emp6.png"
-      }
-    ]
-  }
-  
+  "employees": [
+    {
+      "employeeId": "employee1",
+      "name": "Lucas Grey",
+      "role": "Copywriter",
+      "location": "Pune",
+      "since": "February 2021",
+      "department": "Content",
+      "leaveDates": ["2024-12-03", "2024-12-10"],
+      "image": "images/emp0.png"
+    },
+    {
+      "employeeId": "employee2",
+      "name": "Hashim",
+      "role": "Developer",
+      "location": "Kochi",
+      "since": "January 2023",
+      "department": "Development",
+      "leaveDates": ["2024-11-20", "2024-12-01"],
+      "image": "images/emp1.png"
+    },
+    {
+      "employeeId": "employee3",
+      "name": "John Doe",
+      "role": "SEO Specialist",
+      "location": "Mumbai",
+      "since": "March 2022",
+      "department": "Marketing",
+      "leaveDates": ["2024-11-15", "2024-11-25"],
+      "image": "images/emp2.png"
+    },
+    {
+      "employeeId": "employee4",
+      "name": "Jane Smith",
+      "role": "Graphic Designer",
+      "location": "Delhi",
+      "since": "June 2021",
+      "department": "Design",
+      "leaveDates": ["2024-11-18", "2024-11-30"],
+      "image": "images/emp3.png"
+    },
+    {
+      "employeeId": "employee5",
+      "name": "Evelyn White",
+      "role": "Content Writer",
+      "location": "Chennai",
+      "since": "May 2020",
+      "department": "Content",
+      "leaveDates": ["2024-12-05", "2024-12-15"],
+      "image": "images/emp4.png"
+    },
+    {
+      "employeeId": "employee6",
+      "name": "Emily Davis",
+      "role": "Marketing Specialist",
+      "location": "Hyderabad",
+      "since": "August 2019",
+      "department": "Marketing",
+      "leaveDates": ["2024-11-28", "2024-12-10"],
+      "image": "images/emp5.png"
+    },
+    {
+      "employeeId": "employee7",
+      "name": "Benjamin Clark",
+      "role": "UI/UX Designer",
+      "location": "Bangalore",
+      "since": "October 2020",
+      "department": "Design",
+      "leaveDates": ["2024-11-22", "2024-12-07"],
+      "image": "images/emp6.png"
+    },
+    {
+      "employeeId": "employee8",
+      "name": "David Clark",
+      "role": "Brand Specialist",
+      "location": "Kolkata",
+      "since": "July 2021",
+      "department": "Marketing",
+      "leaveDates": ["2024-12-01", "2024-12-04"],
+      "image": "images/emp7.png"
+    },
+    {
+      "employeeId": "employee9",
+      "name": "Sophia Blue",
+      "role": "Analytics Specialist",
+      "location": "Ahmedabad",
+      "since": "September 2020",
+      "department": "Analytics",
+      "leaveDates": ["2024-11-25", "2024-12-05"],
+      "image": "images/emp8.png"
+    },
+    {
+      "employeeId": "employee10",
+      "name": "Henry Brown",
+      "role": "Video Specialist",
+      "location": "Surat",
+      "since": "April 2021",
+      "department": "Video Production",
+      "leaveDates": ["2024-12-02", "2024-12-08"],
+      "image": "images/emp9.png"
+    }
+  ]
+}

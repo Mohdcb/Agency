@@ -8,7 +8,7 @@ const Notification = () => {
   const notifications = [
     {
       name: 'Darshana',
-      image: '/images/Task Image 3 (1).png' ,
+      image: 'images/emp2.png' ,
       role: 'editing task',
       type: 'note',
       time: '12:30 pm',
@@ -16,7 +16,7 @@ const Notification = () => {
     },
     {
       name: 'Aadhil',
-      image: '/images/Task Image 3.png',
+      image: 'images/emp5.png',
       role: 'digital marketing task',
       type: 'note',
       time: '12:30 pm',
@@ -24,7 +24,7 @@ const Notification = () => {
     },
     {
       name: 'Farzana',
-      image: '/images/Task Image 1.png',
+      image: 'images/emp3.png',
       role: 'social media',
       type: 'complete',
       time: '12:30 pm',
@@ -32,7 +32,7 @@ const Notification = () => {
     },
     {
       name: 'Nibraz',
-      image: '/images/Task Image 2 (1).png' ,
+      image: 'images/emp4.png' ,
       role: 'posters',
       type: 'complete',
       time: '04:57 pm',

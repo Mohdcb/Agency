@@ -5,7 +5,7 @@ import SubTask from "./Subtask";
 import "./Customany2.css";
 import { ArrowUpFromDot, ListCollapse, Maximize2 } from "lucide-react";
 
-const AddNewTaskPage = () => {
+const AddProject = () => {
   const [taskDetails, setTaskDetails] = useState({
     title: "",
     dueDate: null,
@@ -199,4 +199,4 @@ const AddNewTaskPage = () => {
   );
 };
 
-export default AddNewTaskPage;
+export default AddProject;

@@ -6,6 +6,9 @@ import TaskFilters from './TaskFilters';
 import projectData from '../ProjectData.json';
 import { Search } from 'lucide-react';
 import Updatetaskcard from './Updatetaskcard';
+import employeeData from '../Employeedata.json';
+
+
 import { Progress } from 'antd';
 
 function Alltask() {
@@ -24,6 +27,7 @@ function Alltask() {
       date: selectedDate,
     }));
   };
+
 
   const filteredTasks = useMemo(() => {
     return projectData.flatMap((project) =>
@@ -62,15 +66,7 @@ function Alltask() {
           <div className='bg-white p-2 rounded-lg shadow-sm'>
             <Search size={20} />
           </div>
-          <TaskFilters
-            projectData={projectData}
-            onFilterChange={(newFilters) =>
-              setFilters((prevFilters) => ({
-                ...prevFilters,
-                ...newFilters,
-              }))
-            }
-          />
+        
         </div>
       </div>
       <CalendarView onDateChange={handleDateChange} />
@@ -109,18 +105,20 @@ function Alltask() {
         }
       />
       <div className='grid grid-cols-2 gap-3'>
-        {filteredTasks.map((task) => (
-          <TaskCard
-            key={task.taskId}
-            task={task}
-            projectTitle={task.projectTitle}
-            workTitle={task.workTitle}
-            onEditClick={() => {
-              setSelectedTaskId(task.taskId); // Set the selected task ID
-              setIsPopupVisible(true); // Show the popup
-            }}
-          />
-        ))}
+        {filteredTasks.map((task) => {
+          const employee = employeeData.employees.find(emp => emp.name === task.assignedPerson);
+          return (
+            <TaskCard
+              key={task.taskId}
+              task={task}
+              projectTitle={task.projectTitle}
+              workTitle={task.workTitle}
+              employeeImage={employee ? employee.image : ''}
+
+              />
+          );
+
+})}
       </div>
       {isPopupVisible && (
         <Updatetaskcard
